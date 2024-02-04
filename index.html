@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Bulls</title>
+    <link rel="stylesheet" href="fashionbulls.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/172918fa27.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="navbar">
+      <ul>
+        <li>
+          <a
+            href="file:///C:/Users/as/New%20folder/workspace/html%20practice/fashionbulls.html"
+            >home</a
+          >
+        </li>
+        <li>
+          <a
+            href="file:///C:/Users/as/New%20folder/workspace/html%20practice/men.html"
+            >Men</a
+          >
+          <div id="submenu">
+            <ul>
+              <li>
+                <a
+                  href="file:///C:/Users/as/New%20folder/workspace/html%20practice/men.html"
+                  >top-wear</a
+                >
+              </li>
+              <li>
+                <a
+                  href="file:///C:/Users/as/New%20folder/workspace/html%20practice/men.html"
+                  >lower-wear</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a
+            href="file:///C:/Users/as/New%20folder/workspace/html%20practice/women.html"
+            >women</a
+          >
+          <div id="submenu">
+            <ul>
+              <li>
+                <a
+                  href="file:///C:/Users/as/New%20folder/workspace/html%20practice/women.html"
+                  >top-wear</a
+                >
+              </li>
+              <li>
+                <a
+                  href="file:///C:/Users/as/New%20folder/workspace/html%20practice/women.html"
+                  >lower-wear</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#categories">categories</a></li>
+      </ul>
+      <span id="cross"><i class="fa-solid fa-xmark"></i></i></span>
+
+    </div>
+    <div id="logo">fashion <span>bulls</span></div>
+    <a href="file:///C:/Users/as/New%20folder/workspace/html%20practice/form.html?"><i id="acc" class="fa-regular fa-user"></i></a>
+    <span id="hamburger"><i class="fa-solid fa-bars"></i></span>
+    <div id="section">
+      <article>
+        <img id="phone-banner" src="phone-banner.jpeg" alt="sales">
+        <img id="banner" src="men_s-plain-tshirt_2.jpg" alt="trendy sets" />
+      </article>
+    </div>
+    <article id="categories">
+      <h3 id="ctg">categories</h3>
+      <div class="ctg">
+        <div id="a" data-aos="flip-left"class="styles">oversized-t-shirts</div>
+        <div id="b" data-aos="flip-left"class="styles">trendy cargo</div>
+        <div id="c" data-aos="flip-left"class="styles">trendy shirts</div>
+        <div id="d" data-aos="flip-left"class="styles">jeans</div>
+        <div id="e" data-aos="flip-left"class="styles">cargo</div>
+        <div id="f" data-aos="flip-left"class="styles">oversized t-shirts</div>
+        <div id="g" data-aos="flip-left"class="styles">trendy hoodies</div>
+        <div id="h" data-aos="flip-left"class="styles">ladies hoodies</div>
+        <div id="i" data-aos="flip-left"class="styles">ladies jeans</div>
+      </div>
+    </article>
+    <section>
+      <h4>new arrivals</h4>
+      <div id="new">
+        <div class="new" data-aos="zoom-in-up" ><img class="new-a" src="New-Arrival_2.webp" /></div>
+        <div class="new" data-aos="zoom-in-up">
+          <img class="new-a" src="New-Arrival_1_y1HBask.webp" />
+        </div>
+        <div class="new" data-aos="zoom-in-up"><img class="new-a" src="New-Arrival_3.webp" /></div>
+      </div>
+    </section>
+
+    <footer>
+      <div id="footerlogo"># fashion <span>bulls</span></div>
+      <h1>@2023fashionbulls</h1>
+      <div id="contact">
+        <h2>contact on:-</h2>
+        <h2>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </h2>
+        <h2>
+          <a href="#"><i class="fa-solid fa-phone"></i></a>
+        </h2>
+        <h2>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </h2>
+      </div>
+      <div id="txt">over 6 million happy customers</div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="extra">
+      <div id="hlp">
+        <span class="ttl">NEED HELP</span> Contact Us <br>Track Order<br> Returns<br>
+        Refunds<br> FAQs<br> My Account
+      </div>
+      <div id="cmpny">
+        <span class="ttl">COMPANY</span> About Us <br>Careers
+      </div>
+      <div id="stores">
+        <span class="ttl">NEAR ME</span>
+        Bandra<br> Thane<br> Colaba <br>Palladium <br>Malad <br>Ghatkopar <br>Goregaon <br>Pune<br> Bangalore
+        <br>Indore<br> Haryana<br> Bhopal <br>Surat<br> Prayagraj <br>Mohali<br> Ahmedabad <br>Chennai
+      </div>
+    </div>
+    <h6>@by shubham jangra</h6>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      const menu =document.getElementById("hamburger");
+      const cross =document.getElementById("cross");
+      const navbar=document.getElementById("navbar");
+      menu.addEventListener("click",function(){
+        navbar.style.display="flex";
+      })
+     
+      cross.addEventListener("click",function(){
+        navbar.style.display="none";
+      })
+     
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,503 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    
+}
+body
+{
+
+}
+#navbar
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:70px;
+    width:100%;
+    background-color: white;
+    box-shadow: 10px 0px 10px black;
+    z-index: -2;
+    position: absolute;
+        
+}
+#navbar ul
+{
+    list-style: none;
+    display:flex;
+    
+}
+#navbar ul li:hover
+{
+    border-bottom:2px solid blue;
+    color:white;
+}
+#navbar ul li
+{
+    padding:10px 30px;
+}
+#navbar ul li a
+{
+    color:darkblue;
+    font-weight:bolder;
+    font-size: xx-large;
+    text-decoration: none;
+}
+#navbar ul li a :hover
+{
+    background-color:blue;
+    color:white;
+}
+#submenu
+{
+    display: none;
+    margin: 15px -10px;
+}
+#navbar ul li:hover #submenu
+{
+    display: block;
+    position: absolute;
+    background-color:#00a2ff;
+    color:red;
+    border-radius: 5px;
+}
+#navbar ul li:hover #submenu ul
+{
+    display:block;
+    margin: 10px 10px;
+    z-index: +1;
+}
+#icon{
+    color:white;
+    right:10px;
+    position: absolute;
+    text-decoration: none;
+}
+#logo
+{
+    font-weight: bolder;
+    color:crimson;
+    font-size: xx-large;
+    left:20px;
+    top:2%;
+    z-index:+1;
+    font-family: "Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    position: absolute;
+    display: flex;
+
+}
+
+#span
+{
+z-index: +1;
+color:green;
+font-size: xx-large;
+font-family: "Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+p
+{
+    color:blue;
+    font-size: small;
+}
+#acc
+{
+    position: absolute;
+    right:10%;
+    font-size: x-large;
+    color: black;
+    top:5%;
+    z-index: +1;
+}
+#acc:hover
+{
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 10px black);
+}
+#stng:hover
+{
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 10px black);
+}
+#stng
+{
+    position: absolute;
+    margin: -10px 20px;
+    right:5%;
+    font-size: x-large;
+    color:black;
+}
+#body
+{
+    top:10%;
+    z-index:-1;
+    width:100%;
+    position: absolute;
+}
+#hamburger
+{
+  position: absolute;
+  right:1%;
+  top:3%;
+  display: none;
+  height: 70px;
+  width: 90px;
+  font-size: x-large; 
+  color: black;
+  z-index: +2;
+
+}
+#cross
+{
+  color:black;
+  font-size: x-large;
+  cursor: pointer;
+display: none;
+}
+
+#mens
+{
+    height:100%;
+    width:97%;
+    display: flex;
+    flex-direction: column;
+    margin:10px 10px  ;
+    padding:10px 10px;
+    overflow: hidden;
+}
+#upper
+{
+    height:50%;
+    width:100%;
+    display: flex;
+    overflow: scroll;
+    box-shadow: 2px 2px 10px black;
+}
+#lower
+{
+    height:50%;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.upper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lower
+{
+    display: flex;
+    box-shadow: 0px 0px 5px black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+span
+{
+    color:green;
+    height:fit-content;
+    width:100%;
+    display: flex;
+    font-size: large;
+    align-items: center;
+    z-index: +1;
+    justify-content: space-around;
+}
+img{
+    filter: drop-shadow(0px 0px 5px black);
+
+}
+p
+{
+    font-size: larger;
+}
+button
+{
+    font-size: 18px;
+    color:white;
+    background-color: red;
+    border-radius: 5px;
+    height:fit-content;
+    width:60px;
+    border: none;
+}
+footer {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    position: absolute;
+    top:170%;
+  
+  }
+  #footerlogo {
+    left: 50px;
+    font-weight: bolder;
+    color: aqua;
+    position: absolute;
+    font-size:xx-large;
+    top:2%;
+  }
+  h1 {
+    left: 50px;
+    top: 8%;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+  }
+  #contact {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 700px;
+    top: 5%;
+    height: auto;
+    width: 500px;
+  }
+  h2 {
+    color: white;
+  }
+  #txt
+  {
+      top:20%;
+      position: absolute;
+      left:350px;
+      color:white;
+      font-size: xxx-large;
+      font-weight: bolder;
+  
+  }
+  #extra
+  {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100%;
+      width:100%;
+      font-size: large;
+      color:white;
+  }
+  
+  #hlp
+  {
+      display: flex;
+      width:fit-content;
+      height:300px;
+      align-items: center;
+      flex-direction: column;
+  }
+  #cmpny
+  {
+      display: flex;
+      width:fit-content;
+      height:300px;
+      align-items: center;
+      flex-direction: column;
+  }
+  #stores
+  {
+      display: flex;
+      width:fit-content;
+      height:300px;
+      align-items: center;
+      flex-direction: column;
+  }
+  h6
+  {
+    position: absolute;
+    bottom:-5%;
+    color:black;
+    font-size: x-large;
+    left:600px;
+  
+  }
+  
+@media screen and (min-device-width: 320px) and (max-device-width:600px)
+{
+    
+  #navbar
+  {
+    height:fit-content;
+    width:358px;
+    font-size:18px;
+    top:10%;
+    z-index: +1;
+    display:none;
+  }
+  #logo
+  {
+    left:20%;
+    z-index: +1;
+  }
+  #navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  #acc
+  {
+    position: absolute;
+    right: 10%;
+    top:20px;
+    z-index: +1;
+  }
+  #body
+{
+    top:10%;
+    width:360px;
+    position: absolute;
+}
+  #hamburger
+  {
+    display:block;
+    left:2%;
+    position: absolute;
+  }
+  #cross
+  {
+    display: block;
+    position: absolute;
+    top:1%;
+    right:-90%;
+  }
+  #mens
+{
+    height:100%;
+    width:360px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+#upper
+{
+    height:50%;
+    width:300px;
+    display: flex;
+    overflow: scroll;
+    box-shadow: 2px 2px 10px black;
+}
+#lower
+{
+    height:50%;
+    width:300px;
+    display: flex;
+    overflow: scroll;
+    /* justify-content: space-evenly; */
+}
+
+.upper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lower
+{
+    display: flex;
+    /* box-shadow: 0px 0px 5px black; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    background-color: black;
+    height: 100%;
+    border: 1px solid white;
+    width: 360px;
+    position: fixed;
+    position: absolute;
+    top:170%;
+  
+  }
+  #footerlogo {
+    left: 10px;
+    font-weight: bolder;
+    color: aqua;
+    position: absolute;
+    font-size:x-large;
+    top:2%;
+  }
+  h1 {
+    left: 10px;
+    top: 8%;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+}
+#contact {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    left:0px;
+    top: 15%;
+    height: auto;
+    width:300px;
+  }
+  h2 {
+    color: white;
+  }
+  #txt
+  {
+      top:25%;
+      position: absolute;
+      left:40px;
+      color:white;
+      font-size:large;
+  
+  }
+  #extra
+  {
+      display: flex;
+      justify-content:space-evenly;
+      align-items: center;
+      height: 100%;
+      width:330px;
+      font-size:small;
+      color:white;
+  }
+  
+  #hlp
+  {
+      display: flex;
+      width:fit-content;
+      height:300px;
+      align-items: center;
+      flex-direction: column;
+  }
+  #cmpny
+  {
+      display: flex;
+      width:fit-content;
+      height:300px;
+      align-items: center;
+      flex-direction: column;
+  }
+  #stores
+  {
+      display: flex;
+      width:fit-content;
+      height:300px;
+      align-items: center;
+      flex-direction: column;
+  }
+  h6
+  {
+    position: absolute;
+    bottom:-5%;
+    color:black;
+    font-size: x-large;
+    left:40px;
+  }
+
+ 
+}
